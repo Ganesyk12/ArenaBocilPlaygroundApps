@@ -97,7 +97,7 @@
          </div>
       </div>
    </div>
-   <div class="container py-3">
+   <div class="container-fluid py-3">
       <div class="mx-auto text-center wow fadeIn" data-wow-delay="0.1s" style="max-width: 700px;">
          <h1 class="mb-3 display-6">Fasilitas Lainnya</h1>
       </div>
@@ -108,7 +108,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-video text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-1">speed_camera</i>
                </span>
                <h5>CCTV</h5>
             </li>
@@ -117,7 +117,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-car text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-2">local_parking</i>
                </span>
                <h5>Free Parking</h5>
             </li>
@@ -126,7 +126,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-clock text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-1">chair</i>
                </span>
                <h5>Waiting Room</h5>
             </li>
@@ -135,7 +135,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-mosque text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-1">mosque</i>
                </span>
                <h5>Mushalla</h5>
             </li>
@@ -144,7 +144,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-cookie text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-1">cookie</i>
                </span>
                <h5>Snacks</h5>
             </li>
@@ -153,7 +153,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-restroom text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-1">Wc</i>
                </span>
                <h5>Toilet</h5>
             </li>
@@ -162,7 +162,7 @@
                   style="width: 100px; height: 100px; transition: transform 0.3s;"
                   onmouseover="this.style.transform='scale(1.2)';"
                   onmouseout="this.style.transform='scale(1)';">
-                  <i class="fas fa-lock text-white fa-3x"></i>
+                  <i class="material-symbols-outlined fs-1">lock</i>
                </span>
                <h5>Locker</h5>
             </li>

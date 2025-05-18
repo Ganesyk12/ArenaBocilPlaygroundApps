@@ -20,13 +20,13 @@
             <div class="col-12">
                <div class="card">
                   <div class="card-header">
-                     <button type="button" class="btn btn-primary mb-2 bg-primary" id="addbtn" data-toggle="modal" data-target="#mainModal" href="#">
+                     <button type="button" class="btn btn-primary bg-primary" id="addbtn" data-toggle="modal" data-target="#mainModal" href="#">
                         <i class="fa fa-plus"></i> Add Data
                      </button>
                   </div>
                   <div class="card-body">
-                     <table id="main-table" class="table display nowrap table-striped table-bordered">
-                        <thead class="text-center">
+                     <table id="main-table" class="table display nowrap text-center table-striped table-bordered table-hover" style="width:100%">
+                        <thead>
                            <tr>
                               <th>Code</th>
                               <th>Discount</th>

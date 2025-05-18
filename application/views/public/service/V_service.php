@@ -155,9 +155,13 @@
          <div class="card">
             <div class="card-body">
                <h4 class="card-title text-center mb-3">Jam Operasional</h4>
-               <div class="container text-center">
-                  <button type="button" class="btn btn-lg btn-block btn-primary text-white rounded-pill mb-3">Senin - Jum'at : 09.00 - 21.00</button>
-                  <button type="button" class="btn btn-lg btn-block btn-primary text-white rounded-pill">Sabtu - Minggu : 07.00 - 21.00</button>
+               <div class="row dflex justify-content-center">
+                  <div class="col-md-6">
+                     <button type="button" class="btn btn-lg btn-block btn-primary text-white rounded-pill">Senin - Jum'at : 09.00 - 21.00</button>
+                  </div>
+                  <div class="col-md-6">
+                     <button type="button" class="btn btn-lg btn-block btn-primary text-white rounded-pill">Sabtu - Minggu : 07.00 - 21.00</button>
+                  </div>
                </div>
             </div>
          </div>

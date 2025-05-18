@@ -85,7 +85,7 @@
                      const seconds = String(date.getSeconds()).padStart(2, '0');
                      const formattedDate = `${day}-${month}-${year}`;
                      const formattedTime = `${hours}:${minutes}:${seconds}`;
-                     return `${formattedDate}<br>${formattedTime}`;
+                     return `${formattedDate}<br>`;
                   }
                   return formatDateTime(row.created_at);
                }

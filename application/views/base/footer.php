@@ -34,10 +34,10 @@
                   <span class="text-start rounded-0 text-body mb-4"><i class="fa fa-phone-alt text-primary me-2"></i> 0852-8278-3549</span>
                   <span class="text-start rounded-0 text-body mb-4"><i class="fas fa-envelope text-primary me-2"></i> arenabocil05@gmail.com</span>
                   <div class="footer-icon d-flex">
-                     <a class="btn btn-primary btn-md-square me-3 rounded-circle text-white" href=""><i class="fab fa-instagram fa-2x"></i></a>
-                     <a class="btn btn-primary btn-md-square me-3 rounded-circle text-white" href=""><i class="fab fa-tiktok fa-2x"></i></a>
-                     <a href="#" class="btn btn-primary btn-md-square me-3 rounded-circle text-white"><i class="fab fa-youtube fa-2x"></i></a>
-                     <a href="<?= base_url('Auth') ?>" class="btn btn-primary btn-md-square rounded-circle text-white"><i class="fas fa-user fa-2x"></i></a>
+                     <a class="btn btn-primary btn-md-square me-3 rounded-circle text-white" href=""><i class="material-symbols-outlined">photo_camera</i></a>
+                     <a class="btn btn-primary btn-md-square me-3 rounded-circle text-white" href=""><i class="material-symbols-outlined">music_note</i></a>
+                     <a href="#" class="btn btn-primary btn-md-square me-3 rounded-circle text-white"><i class="material-symbols-outlined">youtube_activity</i></a>
+                     <a href="<?= base_url('Auth') ?>" class="btn btn-primary btn-md-square rounded-circle text-white"><i class="material-symbols-outlined">person</i></a>
                   </div>
                </div>
             </div>
@@ -47,7 +47,7 @@
             <div class="footer-item mb-3">
                <a href="<?= base_url('home/terms') ?>" class="d-flex align-items-center text-decoration-none">
                   <span class="btn btn-primary btn-md-square me-3 rounded-circle text-white">
-                     <i class="fas fa-clipboard fa-2x"></i>
+                     <i class="material-symbols-outlined">contract</i>
                   </span>
                   <span>Syarat / Tata Tertib</span>
                </a>
@@ -55,7 +55,7 @@
             <div class="footer-item mb-3">
                <a href="<?= base_url('home/contacts') ?>" class="d-flex align-items-center text-decoration-none">
                   <span class="btn btn-primary btn-md-square me-3 rounded-circle text-white">
-                     <i class="fas fa-headset fa-2x"></i>
+                     <i class="material-symbols-outlined">support_agent</i>
                   </span>
                   <span>Kontak Kami</span>
                </a>
@@ -113,7 +113,7 @@
       </div>
    </div>
 </div>
-<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="fa fa-arrow-up"></i></a>
+<a href="#" class="btn btn-primary border-3 border-primary rounded-circle back-to-top"><i class="material-symbols-outlined">arrow_upward</i></a>
 </body>
 <script>
    $('.select2').select2();
