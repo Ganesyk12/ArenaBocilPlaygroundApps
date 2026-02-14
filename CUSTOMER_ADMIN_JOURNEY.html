@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Journey Bisnis Arena Bocil Playground</title>
+
+    <!-- Mermaid CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1600px;
+            margin: auto;
+            background: #fff;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(90deg, #3498db, #2c3e50);
+            color: #fff;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 10px;
+        }
+
+        .mermaid {
+            background: #f9fbff;
+            border-radius: 12px;
+            padding: 20px;
+            overflow-x: auto;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #2c3e50;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .journey-section {
+            margin: 40px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .feature-card.admin {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+        }
+
+        .feature-card.customer {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+        }
+
+        .feature-card.system {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+        }
+
+        .feature-card h3 {
+            margin: 15px 0;
+            font-size: 1.4em;
+        }
+
+        .feature-card.user {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+        }
+
+        .feature-card.admin-panel {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+        }
+
+        .feature-card.booking {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+        }
+
+        .feature-card.event {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Journey Bisnis Arena Bocil Playground</h1>
+            <p>Visual Business Flow Terintegrasi - Customer & Administrator</p>
+        </header>
+
+        <div class="content">
+
+            <section>
+                <h2>Ringkasan Sistem</h2>
+
+                <p style="font-size: 1.1em; line-height: 1.8; margin-bottom: 25px; text-align: justify;">
+                    Arena Bocil Playground adalah platform digital berbasis web yang dirancang untuk mengelola operasional 
+                    sebuah tempat bermain anak-anak secara komprehensif. Sistem ini mengintegrasikan pengalaman pelanggan 
+                    dalam menjelajahi fasilitas playground, menemukan event menarik, serta memesan tiket secara online 
+                    dengan berbagai pilihan waktu dan promosi. Di sisi administrasi, sistem menyediakan dashboard 
+                    lengkap untuk pengelolaan event, manajemen promosi, dan monitoring booking secara real-time. 
+                    Platform ini dibangun dengan framework CodeIgniter yang menyediakan arsitektur yang kokoh dan 
+                    skalabel untuk kebutuhan bisnis playground.
+                </p>
+
+                <div class="feature-grid">
+                    <div class="feature-card customer">
+                        <div style="font-size: 3em; margin-bottom: 15px;">🎪</div>
+                        <h3 style="color: #2e7d32; margin: 15px 0;">Customer Journey</h3>
+                        <p style="text-align: justify;">Alur pengalaman pelanggan yang komprehensif: eksplorasi fasilitas playground, penjelajahan event, pemilihan tiket, pemesanan dengan kode promosi, dan konfirmasi booking melalui email.</p>
+                    </div>
+
+                    <div class="feature-card admin">
+                        <div style="font-size: 3em; margin-bottom: 15px;">👤</div>
+                        <h3 style="color: #f57c00; margin: 15px 0;">Administrator Journey</h3>
+                        <p style="text-align: justify;">Manajemen operasional playground: login ke dashboard admin, pengelolaan event, pembuatan kode promosi, dan monitoring booking secara real-time.</p>
+                    </div>
+
+                    <div class="feature-card system">
+                        <div style="font-size: 3em; margin-bottom: 15px;">⚙️</div>
+                        <h3 style="color: #4527a0; margin: 15px 0;">Sistem Integrasi</h3>
+                        <p style="text-align: justify;">Platform berbasis CodeIgniter dengan fitur booking online, manajemen event, sistem promosi otomatis, dan komunikasi email terintegrasi.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="journey-section">
+                <h2>Customer Journey Flow</h2>
+                <p>Alur pengalaman pengguna dari kunjungan awal hingga konfirmasi booking</p>
+
+                <div class="mermaid">
+                    graph TB
+                    A[Customer Akses Homepage]
+                    B[Explore Fasilitas Playground]
+                    C[Lihat Daftar Event]
+                    D[Navigasi ke Halaman Booking]
+                    E{Pilih Jenis Tiket?}
+                    F[Tiket Half Day]
+                    G[Tiket Day Time]
+                    H[Input Tanggal & Waktu]
+                    I[Input Jumlah Tiket]
+                    J{Gunakan Kode Promosi?}
+                    K[Input Kode Promosi]
+                    L[Input Data Diri]
+                    M[Validasi Data]
+                    N[Konfirmasi Booking]
+                    O[Generate Transaction ID]
+                    P[Kirim Email Konfirmasi]
+                    Q[Selesai - Siap Kunjungi Playground]
+                    
+                    A --> B
+                    B --> C
+                    C --> D
+                    D --> E
+                    E --> F
+                    E --> G
+                    F --> H
+                    G --> H
+                    H --> I
+                    I --> J
+                    J -->|Ya| K
+                    J -->|Tidak| L
+                    K --> L
+                    L --> M
+                    M --> N
+                    N --> O
+                    O --> P
+                    P --> Q
+                    
+                    %% Styling
+                    classDef customer fill:#e8f5e9,stroke:#43a047,stroke-width:2px;
+                    classDef promo fill:#fff3e0,stroke:#fb8c00,stroke-width:2px;
+                    classDef confirmation fill:#e3f2fd,stroke:#1e88e5,stroke-width:2px;
+                    
+                    class A,B,C,D,E,F,G,H,I,J,L,M,N,O,P,Q customer;
+                    class K promo;
+                </div>
+            </div>
+
+            <div class="journey-section">
+                <h2>Administrator Journey Flow</h2>
+                <p>Alur manajemen operasional playground oleh administrator</p>
+
+                <div class="mermaid">
+                    flowchart TD
+                    AA[Admin Akses Login Page] --> BB[Input Username & Password]
+                    BB --> CC[Otentikasi Sistem]
+                    CC --> DD{Login Berhasil?}
+                    
+                    DD -->|Ya| EE[Dashboard Admin]
+                    DD -->|Tidak| FF[Pesan Error Login]
+                    FF --> BB
+                    
+                    EE --> GG[Menu Manajemen Event]
+                    EE --> HH[Menu Manajemen Tiket/Promo]
+                    EE --> II[Menu Manajemen Transaksi]
+                    
+                    GG --> JJ[Tambah Event Baru]
+                    GG --> KK[Edit Event]
+                    GG --> LL[Hapus Event]
+                    
+                    HH --> MM[Buat Kode Promo]
+                    HH --> NN[Aktif/Nonaktifkan Promo]
+                    HH --> OO[Lihat Statistik Promo]
+                    
+                    II --> PP[Lihat Semua Booking]
+                    II --> QQ[Cari Booking Spesifik]
+                    II --> RR[Export Data Booking]
+                    
+                    JJ --> SS[Upload Gambar Event]
+                    SS --> TT[Simpan Data Event]
+                    TT --> UU[Publikasikan Event]
+                    
+                    MM --> VV[Input Detail Promo]
+                    VV --> WW[Simpan Kode Promo]
+                    WW --> XX[Validasi Kode Promo]
+                    
+                    PP --> YY[Analisis Data Booking]
+                    YY --> ZZ[Laporan Harian/Mingguan/Bulanan]
+                    
+                    %% Styling
+                    classDef admin fill:#fff3e0,stroke:#fb8c00,stroke-width:2px;
+                    classDef event fill:#e1bee7,stroke:#7b1fa2,stroke-width:2px;
+                    classDef promo fill:#ffcdd2,stroke:#c62828,stroke-width:2px;
+                    classDef transaction fill:#bbdefb,stroke:#1565c0,stroke-width:2px;
+                    
+                    class AA,BB,CC,DD,EE,FF admin;
+                    class GG,JJ,KK,LL,TT,UU,SS event;
+                    class HH,MM,NN,OO,VV,WW,XX promo;
+                    class II,PP,QQ,RR,YY,ZZ transaction;
+                </div>
+            </div>
+
+            <section>
+                <h2>Keunggulan Sistem</h2>
+
+                <div class="feature-grid">
+                    <div class="feature-card user">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🔍</div>
+                        <h3 style="color: #1e88e5; margin: 10px 0;">Eksplorasi Mudah</h3>
+                        <p>Desain responsif memudahkan pelanggan menjelajahi fasilitas playground</p>
+                    </div>
+
+                    <div class="feature-card booking">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🎫</div>
+                        <h3 style="color: #43a047; margin: 10px 0;">Booking & Email Otomatis</h3>
+                        <p>Proses pemesanan tiket cepat dan mudah dengan konfirmasi serta notifikasi otomatis ke pelanggan</p>
+                    </div>
+
+                    <div class="feature-card event">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">🏷️</div>
+                        <h3 style="color: #e53935; margin: 10px 0;">Promo Dinamis</h3>
+                        <p>Sistem kode promosi otomatis dengan validasi real-time</p>
+                    </div>
+
+                    <div class="feature-card admin-panel">
+                        <div style="font-size: 2.5em; margin-bottom: 10px;">📊</div>
+                        <h3 style="color: #f57c00; margin: 10px 0;">Dashboard Admin</h3>
+                        <p>Monitoring real-time semua aktivitas booking dan event</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+        <footer>
+            <p>© <span id="currentYear"></span> Arena Bocil Playground | Business Journey</p>
+        </footer>
+
+    </div>
+
+    <script>
+        mermaid.initialize({
+            startOnLoad: true,
+            theme: "default",
+            flowchart: {
+                curve: "basis"
+            }
+        });
+
+        // Set the current year dynamically
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
