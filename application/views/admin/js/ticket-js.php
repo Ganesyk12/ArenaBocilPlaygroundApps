@@ -73,7 +73,7 @@
                }
             },
             {
-               "data": "created_at",
+               "data": "date_created",
                render: function(data, type, row) {
                   function formatDateTime(dateTimeString) {
                      const date = new Date(dateTimeString);
@@ -87,7 +87,7 @@
                      const formattedTime = `${hours}:${minutes}:${seconds}`;
                      return `${formattedDate}<br>`;
                   }
-                  return formatDateTime(row.created_at);
+                  return formatDateTime(row.date_created);
                }
             },
             {
@@ -105,7 +105,7 @@
                      const formattedTime = `${hours}:${minutes}:${seconds}`;
                      return `${formattedDate}<br>${formattedTime}`;
                   }
-                  return formatDateTime(row.created_at);
+                  return formatDateTime(row.updated_at);
                }
             },
             {

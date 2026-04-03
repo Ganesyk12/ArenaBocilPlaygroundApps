@@ -27,8 +27,8 @@ class Tickets extends CI_Controller
    public function view_data_where()
    {
       $tables = "voucher";
-      $search = array('id_voucher', 'code', 'discount', 'valid_from', 'valid_for', 'status', 'created_at', 'updated_at');
-      $where = array('created_at >' => '2020-01-01');
+      $search = array('id_voucher', 'code', 'discount', 'valid_from', 'valid_for', 'status', 'date_created', 'updated_at');
+      $where = array('date_created >' => '2020-01-01');
       $isWhere = null;
       header('Content-Type: application/json');
       echo $this->Main_model->get_tables_where($tables, $search, $where, $isWhere);

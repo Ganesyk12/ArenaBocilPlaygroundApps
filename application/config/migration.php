@@ -25,6 +25,6 @@ $config['migration_table'] = 'migrations';
 
 $config['migration_auto_latest'] = TRUE;
 
-$config['migration_version'] = 003;
+$config['migration_version'] = 10;
 
 $config['migration_path'] = APPPATH . 'migrations/';

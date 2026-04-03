@@ -39,13 +39,14 @@ class Migration_Transaction extends CI_Migration
                 'constraint'        => 25,
                 'null'              => TRUE,
             ],
-            'user'      => [
+            'user_id'      => [
                 'type'              => 'VARCHAR',
                 'constraint'        => 25,
                 'null'              => TRUE,
             ]
         ]);
         $this->dbforge->add_key('id_transaction', TRUE);
+        $this->dbforge->add_key('user_id');
         $this->dbforge->create_table($this->tableName);
     }
 

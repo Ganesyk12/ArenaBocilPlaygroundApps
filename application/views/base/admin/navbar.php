@@ -16,7 +16,7 @@
       </li>
       <li class="nav-item dropdown">
          <a class="nav-link" data-toggle="dropdown" href="#" aria-expanded="false">
-            <h5>Admin</h5>
+            <h5><?= $this->session->userdata('fullname') ? $this->session->userdata('fullname') : 'Admin' ?></h5>
          </a>
          <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right" style="width:auto;">
             <a class="dropdown-header"></a>
@@ -25,7 +25,7 @@
             <a class="text-center d-flex justify-content-center align-items-center mb-2">
 
             </a>
-            <a class="dropdown-item" href="<?= base_url('auth') ?>">
+            <a class="dropdown-item" href="<?= base_url('auth/logout') ?>">
                <i class="fas fa-power-off text-danger mr-2"></i> Logout
             </a>
             <a class=" dropdown-footer"></a>
